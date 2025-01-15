@@ -18,14 +18,17 @@ result = reader.readtext(img)
 for r in result:
     bbox, text, prob = r # bbox is the bounding box of the text, text is the text detected, and prob is the probability of the detection.
 
-    ## convert bbox float to int
-    points = [(int(pt[0]), int(pt[1])) for pt in bbox]
-    ## draw bounding box
-    cv2.rectangle(img, points[0], points[2], (0, 0, 255), 2)
+    ## set the threshold for the probability of the detection
+    if prob > 0.5:
+        ## convert bbox float to int
+        points = [(int(pt[0]), int(pt[1])) for pt in bbox]
+        ## draw bounding box
+        cv2.rectangle(img, points[0], points[2], (0, 0, 255), 2)
+        
+        ## put text
+        ## cv2.putText(img, text, location, font, fontScale, color, thickness)
+        cv2.putText(img, text, points[0], cv2.FONT_HERSHEY_SIMPLEX, 3, (255, 0, 0), 3)
     
-    ## put text
-    ## cv2.putText(img, text, location, font, fontScale, color, thickness)
-    cv2.putText(img, text, points[0], cv2.FONT_HERSHEY_SIMPLEX, 3, (255, 0, 0), 3)
     
 # plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 # plt.show()
