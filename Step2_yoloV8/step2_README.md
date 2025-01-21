@@ -1,1 +1,0 @@
-As the YOLO development community continues its work, newer YOLO models are consistently being released. While the latest version is v11, v8 is considered more stable. Therefore, this step focuses exclusively on v8. As noted in the main page README, a dedicated repository will focus solely on object detection (OD).
