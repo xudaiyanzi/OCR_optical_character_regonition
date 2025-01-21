@@ -9,7 +9,6 @@ model = YOLO('yolo11n.pt')
 # # train the model - use the coco8.yaml file to train the model for 100 epochs
 # model.train(data='coco8.yaml', epochs=100, imgsz=640)
 
-# # prediction - now the model is trained, we can use it to make predictions
-# results = model(os.path.join('..', 'data', 'street_name.jpg'), save=True, show=True)
+# prediction - now the model is trained, we can use it to make predictions
+results = model(os.path.join('..', 'data', 'street_name.jpg'), save=True, show=True)
 
-# predict the license plate
