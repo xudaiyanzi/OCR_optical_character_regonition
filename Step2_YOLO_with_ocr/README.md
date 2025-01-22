@@ -12,6 +12,6 @@ python -m pip install ultralytics
 - Due to the nature of training, YOLOv11 can not predict the text but only the object from the image
 - We need to combine this object detection capbility with another ocr model to predict text from image
 
-Here are two script: one is "yolov11_warmup.py", which is an example script adapted from Utralytics website; another one is "yolov11_with_ocr.py" which combines the OD model with OCR model, to help read the text from an image.
+Here are two script: one is "yolov11_warmup.py", which is an [example script ](https://www.ultralytics.com/blog/using-ultralytics-yolo11-for-automatic-number-plate-recognition)adapted from Utralytics website; another one is "yolov11_with_ocr.py" which combines the OD model with OCR model, to help read the text from an image.
 
 As noted in the main page README, a dedicated repository will focus solely on object detection (OD).
