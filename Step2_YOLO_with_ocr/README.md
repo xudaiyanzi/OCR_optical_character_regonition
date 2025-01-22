@@ -1,3 +1,5 @@
+## Step2: Read text from images using YOLO and OCR
+
 As the YOLO development community continues its work, newer YOLO models are consistently being released. Here, we use YOLO v11, which is the lastest version of YOLO (released in Sep, 2024).
 
 To run the model, follow the instruction from [ultralytics](https://github.com/ultralytics/ultralytics) to install the ultralytics in your VM.
