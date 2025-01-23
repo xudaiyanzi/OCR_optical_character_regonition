@@ -41,6 +41,10 @@ import os
 # load_and_export("test", "test")
 ##########################################################################################
 
-## now we can start training using the exported dataset
-## the train will be taken care in google colab
+## we can also use google colab to download the dataset and train the model with yolov11 and roboflow
+## the code is in the file "digital_roboflow_yolov11.ipynb"
+
+
+
+
 
