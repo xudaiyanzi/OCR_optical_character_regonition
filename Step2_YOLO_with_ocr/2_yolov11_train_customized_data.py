@@ -42,4 +42,5 @@ import os
 ##########################################################################################
 
 ## now we can start training using the exported dataset
+## the train will be taken care in google colab
 
